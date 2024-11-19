@@ -6,6 +6,7 @@
 """
     Docstring:
 """
+import sys
 films = ['casablanca', 'enter the dragon', 'fist of fury', 'waterloo', 'gladiator']
 
 # Iterate through a COLLECTION using n ITERATOR for loop.
@@ -29,3 +30,12 @@ for (idx, film) in enumerate(films, start=0):
     films[idx] = film.lower()
     idx += 1
 print("Films = ", films)
+
+print("Done.")
+
+try:
+    # sys.exit() can be caught using TRY block.
+    sys.exit(0) # Explicitly EXIT script and return EXIT code (0=success, 1-255=error code)
+except SystemExit:
+    print("Exiting script..")
+    sys.exit(15)
