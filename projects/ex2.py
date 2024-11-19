@@ -2,6 +2,6 @@ first = 'Hien'
 last = 'Nguyen'
 print(first, last)
 mylist = [first, last]
-mylist
-mydict = {first:last}
-mydict
+print(mylist)
+mydict = {'first':first, 'last':last}
+print(mydict['first'], mydict['last'])
