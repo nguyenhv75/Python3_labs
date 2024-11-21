@@ -1,4 +1,5 @@
 import sys
+import adv
 
 def add(*args):
     """ Return SUM of all parameters as a float """
@@ -22,12 +23,17 @@ def div(x, z):
     """ Return Quotient of x divided by z to 3 decimal places """
     return round(x/z, 3)
 
-(print("***** BASIC Calculator APP *****"))
-print(f"4 + 3 = {add(4, 3)}")
-print(f"4 + 3 +2 +1 = {add(4, 3, 2, 1)}")
-print(f"4 * 3 = {mul(4, 3)}")
-print(f"4 * 3 * 2 = {mul(4, 3, 2)}")
-print(f"4 - 3 = {sub(4, 3)}")
-print(f"4 / 3 ={div(4, 3)}")
+def main():
+    (print("***** BASIC Calculator APP *****"))
+    print(f"4 + 3 = {add(4, 3)}")
+    print(f"4 + 3 +2 +1 = {add(4, 3, 2, 1)}")
+    print(f"4 * 3 = {mul(4, 3)}")
+    print(f"4 * 3 * 2 = {mul(4, 3, 2)}")
+    print(f"4 - 3 = {sub(4, 3)}")
+    print(f"4 / 3 ={div(4, 3)}")
+    print(f"From Advanced Calc 5 ** 2 = {adv.power(5, 2)}")
+    return None
 
-sys.exit(0)
+if __name__ == "__main__":
+    main()
+    sys.exit(0)
