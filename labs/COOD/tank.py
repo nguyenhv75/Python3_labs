@@ -42,3 +42,13 @@ class Tank:
 
     def __add__(self, other):
         return self._health + other._health
+
+    def get_health(self):
+        return self.heatth
+
+    def set_health(self, newhealth):
+        self._health = newhealth
+        return None
+
+    tank_health = property(get_health, set_health)
+

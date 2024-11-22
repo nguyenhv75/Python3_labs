@@ -25,9 +25,17 @@ def main():
     thomas_tank.take_damage(62)
     rick_tank.take_damage(22)
 
-    print(f"Thomas's tank has health of {thomas_tank._health}")
+    """ print(f"Thomas's tank has health of {thomas_tank._health}") """
 
     print(f"Status of Thomas's and Rick's Tank = {thomas_tank + rick_tank}")
+
+    """ thomas_tank._health = 100 """
+    """ print(f"New health of Thomas's tank is {thomas_tank._health}") """
+    thomas_tank.set_health(101)
+    print(f"New health of Thomas's tank is {thomas_tank.get_health()}")
+
+    thomas_tank.set_health(102)
+    print(f"New health of Thomas's tank is {thomas_tank.get_health()}")
 
     return None
 
